@@ -49,18 +49,11 @@ strong { color: #444; }
   text-decoration: none;
 }
 .academic-header nav a:hover { color: var(--link); text-decoration: underline; }
-.print-button {
-  border: 0; padding: 0; background: none; color: var(--link); cursor: pointer;
-  font: inherit; text-decoration: underline; text-underline-offset: 2px;
-}
 main:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 .intro { padding: 25px 12px 30px; }
 .intro p { margin: 0 0 18px; }
 .intro p:last-child { margin-bottom: 0; }
 .resource-links { display: flex; flex-wrap: wrap; gap: 8px 12px; }
-.research-summary h2, .research-summary p { display: inline; margin: 0; font: inherit; }
-.research-summary h2 { color: #444; font-weight: 700; }
-.research-summary h2::after { content: ": "; }
 .academic-section { padding: 25px 12px 30px; border-top: 1px solid var(--rule); }
 .academic-section h2 {
   margin: 0 0 17px; color: var(--heading); font-family: var(--serif);
@@ -78,34 +71,16 @@ main:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 }
 .publication-authors, .publication-venue { margin-top: 2px !important; font-size: .8rem; line-height: 1.5; }
 .publication-venue { color: #666; font-family: var(--serif); font-style: italic; }
-.background-group + .background-group { margin-top: 30px; }
-.background-group h3 { margin: 0 0 10px; color: #444; font-size: .84rem; }
-.academic-list { margin: 0; }
-.academic-list > div {
-  display: grid; grid-template-columns: 92px 1fr; gap: 12px;
-  padding: 10px 0; border-top: 1px dotted #d2d2d2;
-}
-.academic-list dt { color: #666; font-size: .75rem; }
-.academic-list dd { margin: 0; font-size: .82rem; line-height: 1.55; }
-.academic-list dd span { color: #666; font-style: italic; }
-.academic-list.compact > div { grid-template-columns: 48px 1fr; }
 footer {
   margin: 0 12px; padding-top: 20px; border-top: 1px solid var(--rule);
   color: #666; font-size: .75rem; line-height: 1.6;
 }
-.cv-contact { display: flex; justify-content: space-between; gap: 24px; }
-.cv-publications { margin: 0; padding-left: 1.65rem; }
-.cv-publications li { margin-bottom: 18px; padding-left: 2px; }
-.cv-publications p { margin: 0; font-size: .8rem; line-height: 1.5; }
-
 @media (max-width: 600px) {
   .page-shell { padding: 20px 17px 42px; }
   .academic-header h1 { font-size: 2.1rem; }
   .academic-header nav { justify-content: flex-start; gap: 0 16px; }
   .intro, .academic-section { padding-right: 0; padding-left: 0; }
-  .academic-list > div, .academic-list.compact > div { grid-template-columns: 1fr; gap: 3px; }
   footer { margin-right: 0; margin-left: 0; }
-  .cv-contact { display: block; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
