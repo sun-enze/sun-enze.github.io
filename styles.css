@@ -49,12 +49,16 @@ strong { color: #444; }
   text-decoration: none;
 }
 .academic-header nav a:hover { color: var(--link); text-decoration: underline; }
+.academic-header nav a[aria-current="page"] {
+  color: var(--heading); text-decoration: underline;
+}
 main:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 .intro { padding: 25px 12px 30px; }
 .intro p { margin: 0 0 18px; }
 .intro p:last-child { margin-bottom: 0; }
 .resource-links { display: flex; flex-wrap: wrap; gap: 8px 12px; }
 .academic-section { padding: 25px 12px 30px; border-top: 1px solid var(--rule); }
+.standalone-publications { border-top: 0; }
 .academic-section h2 {
   margin: 0 0 17px; color: var(--heading); font-family: var(--serif);
   font-size: 1.25rem; font-weight: 700; line-height: 1.3;
