@@ -27,7 +27,7 @@ jobs:
       - name: Build static site
         run: |
           mkdir -p site
-          cp index.html publications.html styles.css cv.html site/
+          cp index.html publications.html styles.css cv.html Enze-Sun.jpg site/
           base64 --decode Enze-Sun-CV.pdf.b64 > site/Enze-Sun-CV.pdf
           touch site/.nojekyll
 
