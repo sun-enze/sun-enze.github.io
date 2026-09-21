@@ -53,9 +53,13 @@ strong { color: #444; }
   color: var(--heading); text-decoration: underline;
 }
 main:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
-.intro { padding: 25px 12px 30px; }
+.intro { display: flow-root; padding: 25px 12px 30px; }
 .intro p { margin: 0 0 18px; }
 .intro p:last-child { margin-bottom: 0; }
+.profile-photo {
+  float: right; display: block; width: 150px; height: auto;
+  margin: 0 0 12px 20px;
+}
 .resource-links { display: flex; flex-wrap: wrap; gap: 8px 12px; }
 .academic-section { padding: 25px 12px 30px; border-top: 1px solid var(--rule); }
 .standalone-publications { border-top: 0; }
@@ -85,6 +89,9 @@ footer {
   .academic-header nav { justify-content: flex-start; gap: 0 16px; }
   .intro, .academic-section { padding-right: 0; padding-left: 0; }
   footer { margin-right: 0; margin-left: 0; }
+}
+@media (max-width: 480px) {
+  .profile-photo { float: none; width: 140px; margin: 0 auto 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
